@@ -1,0 +1,61 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    /* TODO - set the background color of the header section as you wish */
+    background: antiquewhite;
+    width: 95%;
+    height: 10%;
+    padding: 10px;
+    border: 5px;
+    border-radius: 5px;
+    margin: 5px;
+
+
+    /* TODO - set the text color of the header section and align it to center */
+    color: black;
+    text-align: center;
+    margin: 10px;
+    padding: 50px;
+    border: 2px solid #ffd296;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+p {
+    align: center;
+    font-size: large;
+}
+
+.body {
+    /* TODO - Set the background of the body section as a gradient starting or ending with the same color as in the header */
+    width: 40%;
+    height: 80%;
+    background-image: linear-gradient(to top, #ffe1b9, #ffb95e);
+    padding: 10px;
+    border: 5px;
+    margin: auto;
+    /* TODO - align the body div in the centre and let a space between it and the header */
+    align-items: center;
+    /* TODO - set the distance between the text and the picture + the body section to a certain value - 20px (for example) */
+    box-sizing: 20px;
+    /* TODO - set the text color of the header section and align it as justify */
+    color: #000000;
+    text-align: left;
+    /* TODO - set the rounded borders having as example the one in the header section */
+    border: #de9c46;
+    border-radius: 20px;
+    
+}
+
+/* Do not modify */
+.image {
+    /* TODO - search on internet to match the example*/
+    
+    margin: 5px;
+    border: 5px;
+    border-radius: 20px;
+
+}
