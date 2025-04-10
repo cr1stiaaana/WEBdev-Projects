@@ -1,0 +1,138 @@
+body {
+
+    background-color: aliceblue;
+
+}
+
+.myBody {
+
+    box-shadow: inset;
+}
+
+.head {
+	/* TODO - set the head color */
+    background-color: bisque;
+	/* TODO - make the man's head like a circle */
+    width: 5vw;
+    height: 10vh;
+    /* TODO - put the head of the man in the middle of the page*/
+    margin-bottom: 1%;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 50%;
+}
+
+.all_body {
+	width: 100%;
+	height: 15vh;
+	text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.5%;
+}
+
+
+
+.right_hand {
+
+    background-color: lightgreen;
+    /* TODO - set the right hand color */
+    width: 2vw;
+    height: 15vh;
+    position: relative;
+    display: inline-block;
+    margin-left: 0.25%;
+    /* TODO - modify the display properties of the div */
+    /* TODO - set the relative position of the man's right hand to the man's body */
+    animation: animation_2 2s ease-in-out infinite;
+    /* TODO - set other properties of this animation */
+}
+
+
+.left_hand {
+
+    background-color: lightgreen;
+    /* TODO - set the left hand color */
+    width: 2vw;
+    height: 15vh;
+    position: relative;
+    display: inline-block;
+    margin-right: 0.25%;
+    /* TODO - modify the display properties of the div */
+    /* TODO - set the relative position of the man's left hand to the man's body */
+    animation: animation_1 2s ease-in-out infinite;
+
+}
+
+.body {
+    background-color:  lightblue;
+    width: 5vw;
+    height: 15vh;
+    /* TODO - set the man's body color */
+    /* TODO - set the width and the height of the man's body */
+	display: inline-block;
+	position: relative;
+}
+
+.legs {
+    
+    width: 100%;
+	height: 15vh;
+	text-align: center;
+    margin-top: 0.5%;
+}
+
+.left_leg {
+    /* TODO - set the left leg color */
+	/* TODO - modify the display properties of the div */
+    background-color: orange;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.2%;
+    
+    width: 2vw;
+    height: 15vh;
+}
+
+.right_leg {
+    /* TODO - set the left leg color */
+	/* TODO - modify the display properties of the div */
+   
+    background-color: orange;
+    display: inline-block;
+    position: relative;
+    width: 2vw;
+    height: 15vh;
+    margin-left : 0.2%;
+}
+
+@keyframes animation_1 {
+    /* TODO - make an animation from 0% to 100% */
+    from {
+        
+        transform: rotate(0deg);
+        transform-origin: 100% 0%;
+    }
+    to {
+        
+        transform: rotate(46deg);
+        transform-origin: 100% 0%;
+    }
+}
+
+@keyframes moveBackground {
+    
+    from {
+        background-color: 100% 0;
+    }
+
+
+    to {
+        background-position: -50% 0;
+    }
+    
+    /* TODO - make an animation with keywords "from" and "to" */
+}
