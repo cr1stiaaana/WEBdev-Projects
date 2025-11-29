@@ -21,7 +21,7 @@ WEBdev -  Projects is a list of small frontend projects developed using HTML, CS
     - project 2: created a Day/Night Mode for a page.
 - **lab 5**
     - created a countdown page until the next lab
--**final project** - create a to do app with the following functionalities:
+- **final project** - create a to do app with the following functionalities:
     - displays all of your current tasks (total, completed, remaining), implemented using the localStorage function in JavaScript
     - lets you see what tasks you have in each category mentioned before
     - lets you add or delete tasks
