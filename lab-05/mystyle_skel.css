@@ -1,0 +1,73 @@
+body {
+    background-color: rosybrown;
+}
+
+.container {
+    margin: 10rem auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cont-child {
+    flex: 0;
+
+    font-family: monospace;
+    font-size: 1vw;
+}  
+
+.cont-child:first-child {
+    margin-right: 20px;
+}
+
+.tick {
+    height: 20vh;
+    margin: 3rem 0;
+
+    float: right;
+}
+
+.timer {
+    display: flex;
+    margin-left: 20rem;
+}
+
+.timer-fmt {
+    background: rgb(20, 119, 155);
+    color: white;
+
+    width: 5rem;
+    height: 5rem;
+
+    display: grid;
+
+    margin-right: 2rem;
+
+    text-align: center;
+    place-items: center;
+}
+
+.timer-fmt span {
+    display: block;
+
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.timer-fmt h4 {
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+
+    margin-bottom: 0.1rem;
+    margin-top: -0.4rem;
+}
+
+#btn {
+    width: 10%;
+    height: 10%;
+
+    background-color: cornflowerblue;
+
+    margin: auto;
+}

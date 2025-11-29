@@ -1,0 +1,288 @@
+/* font si fundal pentru modul light */
+body {
+  font-family: sans-serif;
+  background: #ffc4c4;
+  color: white;
+}
+
+/* fundal pentru modul dark */
+body.dark-mode {
+  background: #280101;
+  color: white;
+}
+
+/* containerul principal al aplicatiei */
+.container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 17vh;
+  background: rgb(237, 84, 84);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+/* container in dark mode */
+.dark-mode .container {
+  background-color: rgb(62, 33, 33);
+  border: 1px solid #560d0d;
+}
+
+/* stil pentru input-uri si butoane */
+input, button {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1rem;
+  background-color: #fdb8b8;
+  color: white;
+  border: none;
+}
+
+/* input-uri si butoane in dark mode */
+.dark-mode input,
+.dark-mode button {
+  background-color: #583131;
+  color: white;
+  border: none;
+}
+
+/* spatiu intre taskuri si containere */
+.tasks-container, .task-item {
+  margin-top: 10px;
+}
+
+/* stilul fiecarui task */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #ff8b8b;
+  border-radius: 5px;
+  gap: 10px;
+  transition: background 0.3s;
+}
+
+/* task in dark mode */
+.dark-mode .task-item {
+  background-color: #2a2a2a;
+}
+
+/* culoare pentru checkbox */
+.task-checkbox {
+  accent-color: #5980ff;
+}
+
+/* pozitionare text task */
+.task-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* stil pentru task completat */
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* container pentru statistici */
+.stats {
+  background: #ff8b8b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #a31919;
+}
+
+/* statistici in dark mode */
+.dark-mode .stats {
+  background: #222;
+  border-color: #444;
+}
+
+/* grid pentru statistici */
+.stats-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* fiecare element statistic */
+.stat-item {
+  flex: 1;
+  text-align: center;
+}
+
+/* titlul aplicatiei */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* sectiunea de input */
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* buton pentru schimbarea temei */
+.toggle-theme {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* containerul butoanelor de filtrare */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* buton de filtrare */
+.filter-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #f4a7a7;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+/* efect de hover pe butonul de filtrare */
+.filter-btn:hover {
+  background: #c03a3a;
+}
+
+/* stilul de baza pentru butonul de editare */
+.edit-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 10px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* buton editare in dark mode */
+.dark-mode .edit-btn {
+  color: #ffffff;
+}
+
+/* hover pe buton editare */
+.edit-btn:hover {
+  background-color: #ffffff;
+  color: #c03a3a;
+}
+
+/* hover in dark mode pentru editare */
+.dark-mode .edit-btn:hover {
+  background-color: #333;
+  color: #f98c8c;
+}
+
+/* stilul de baza pentru butonul de stergere */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 10px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* buton stergere in dark mode */
+.dark-mode .delete-btn {
+  color: #ffffff;
+}
+
+/* hover pe butonul de stergere */
+.delete-btn:hover {
+  background-color: #ffffff;
+  color: #c03a3a;
+}
+
+/* hover in dark mode pentru stergere */
+.dark-mode .delete-btn:hover {
+  background-color: #333;
+  color: #f98c8c;
+}
+
+/* butonul de sterge tot */
+.delete-all-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff8b8b;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* buton sterge tot in dark mode */
+.dark-mode .delete-all-btn {
+  background-color: #650202;
+  color: white;
+}
+
+/* hover pe buton sterge tot */
+.delete-all-btn:hover {
+  background-color: #a31919;
+}
+
+/* hover dark mode pe buton sterge tot */
+.dark-mode .delete-all-btn:hover {
+  background-color: #885151;
+}
+
+/* sectiunea butonului de stergere totala */
+.action-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* design responsive pentru ecrane mici */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 10vh;
+    padding: 15px;
+  }
+
+  .stats-grid,
+  .filter-buttons,
+  .input-section,
+  .action-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-text {
+    width: 100%;
+  }
+
+  .edit-btn,
+  .delete-btn,
+  .delete-all-btn {
+    width: 100%;
+  }
+}

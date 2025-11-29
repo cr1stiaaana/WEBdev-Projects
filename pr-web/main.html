@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proiect WEB101</title>
+  <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+  <!-- buton pentru comutarea temei -->
+<button class="toggle-theme" id="themeToggle">🌙</button>
+
+<!-- containerul principal al aplicatiei -->
+<div class="container">
+  
+  <!-- titlul aplicatiei -->
+  <div class="header">
+    <h1>ToDo App</h1>
+  </div>
+
+  <!-- statistici despre task-uri -->
+  <div class="stats" id="stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number" id="totalTasks">0</div>
+        <div class="stat-label">Total Tasks</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="completedTasks">0</div>
+        <div class="stat-label">Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="remainingTasks">0</div>
+        <div class="stat-label">Remaining</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- input si buton pentru adaugarea unui task -->
+  <div class="input-section">
+    <input type="text" id="taskInput" placeholder="New Task" />
+    <button id="addBtn">Add your tasks</button>
+  </div>
+
+  <!-- container pentru afisarea task-urilor -->
+  <div class="tasks-container" id="tasksContainer"></div>
+
+  <!-- butoane pentru filtrarea task-urilor -->
+  <div class="filter-buttons">
+    <button class="filter-btn" data-filter="all">Show All</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+    <button class="filter-btn" data-filter="uncompleted">Uncompleted</button>
+  </div>
+
+  <!-- buton pentru stergerea tuturor task-urilor -->
+  <div class="action-section">
+    <button id="deleteAllBtn" class="delete-all-btn">Delete All Tasks</button>
+  </div>
+</div>
+
+<!-- conectare fisier javascript -->
+<script src="myScript.js"></script>
+
+</html>
